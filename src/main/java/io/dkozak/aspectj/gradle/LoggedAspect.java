@@ -17,6 +17,7 @@ public class LoggedAspect {
     public Object around(ProceedingJoinPoint pjp, Logged logged) throws Throwable {
         Object[] args = pjp.getArgs();
         System.out.println(pjp.getSignature() + " call at with args " + Arrays.toString(args));
+        System.out.println("calling...");
         return pjp.proceed();
     }
 

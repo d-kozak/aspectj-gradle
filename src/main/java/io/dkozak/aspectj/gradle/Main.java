@@ -4,7 +4,9 @@ public class Main {
 
     @Logged
     public static void main(String[] args) {
+        System.out.println("before foo");
         foo(10);
+        System.out.println("after foo");
         int baz = bar("ay caramba");
     }
 
